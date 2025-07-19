@@ -300,6 +300,54 @@ graph TB
     C2 --> C3
     C3 --> A5
 ```
+### **Fluxo de Dados**
+```mermaid
+sequenceDiagram
+    participant User as 👤 User
+    participant UI as 🎨 FavoriteButton.tsx
+    participant Hook as 🪝 useFavorites
+    participant Context as 📦 FavoriteContext
+    participant Service as ⚡ FavoriteService
+    participant Validator as ✅ FavoriteValidator
+    participant UseCase as 🎯 ToggleFavoriteUseCase
+    participant Repo as 💾 FavoriteRepository
+    participant Storage as 📱 AsyncStorage
+
+    User->>UI: Toca no botão favorito
+    UI->>Hook: useFavorites().toggleFavorite(recipeId)
+    Hook->>Context: toggleFavorite(recipeId)
+    
+    Context->>Service: favoriteService.toggleFavorite(recipeId)
+    Service->>Validator: validateRecipeId(recipeId)
+    Validator-->>Service: ValidationResult
+    
+    alt Validation Success
+        Service->>UseCase: execute(recipeId)
+        UseCase->>Repo: isFavorite(recipeId)
+        Repo->>Storage: AsyncStorage.getItem()
+        Storage-->>Repo: favorites[]
+        Repo-->>UseCase: boolean
+        
+        alt Is Favorite
+            UseCase->>Repo: removeFavorite(recipeId)
+            Repo->>Storage: AsyncStorage.setItem()
+        else Not Favorite
+            UseCase->>Repo: addFavorite(recipeId)
+            Repo->>Storage: AsyncStorage.setItem()
+        end
+        
+        UseCase-->>Service: boolean (new state)
+        Service-->>Context: FavoriteUseCaseResult
+        Context->>Context: setFavorites(newState)
+        Context-->>Hook: Updated context
+        Hook-->>UI: Re-render with new state
+        UI-->>User: Visual feedback (heart filled/empty)
+    else Validation Error
+        Service-->>Context: Error
+        Context-->>UI: Error state
+        UI-->>User: Error feedback
+    end
+    ```
 
 ### **Entidades Principais**
 
