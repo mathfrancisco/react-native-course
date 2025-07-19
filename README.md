@@ -347,7 +347,7 @@ sequenceDiagram
         Context-->>UI: Error state
         UI-->>User: Error feedback
     end
-    ```
+```
 
 ### **Entidades Principais**
 
