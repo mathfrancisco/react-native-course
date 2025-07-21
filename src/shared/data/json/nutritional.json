@@ -1,0 +1,215 @@
+{
+  "version": "1.0",
+  "lastUpdated": "2024-01-20T10:00:00Z",
+  "dailyValues": {
+    "calories": 2000,
+    "protein": 50,
+    "carbs": 300,
+    "fat": 65,
+    "saturatedFat": 20,
+    "fiber": 25,
+    "sugar": 50,
+    "sodium": 2300,
+    "cholesterol": 300,
+    "vitaminC": 90,
+    "calcium": 1000,
+    "iron": 18,
+    "vitaminA": 900,
+    "vitaminD": 20,
+    "vitaminE": 15,
+    "vitaminK": 120,
+    "folate": 400,
+    "vitaminB12": 2.4,
+    "magnesium": 400,
+    "phosphorus": 700,
+    "potassium": 3500,
+    "zinc": 11
+  },
+  "nutritionLabels": {
+    "pt-BR": {
+      "calories": "Calorias",
+      "protein": "Proteína",
+      "carbs": "Carboidratos",
+      "fat": "Gordura Total",
+      "saturatedFat": "Gordura Saturada",
+      "transFat": "Gordura Trans",
+      "fiber": "Fibra Alimentar",
+      "sugar": "Açúcares",
+      "sodium": "Sódio",
+      "cholesterol": "Colesterol",
+      "vitaminC": "Vitamina C",
+      "calcium": "Cálcio",
+      "iron": "Ferro",
+      "vitaminA": "Vitamina A",
+      "vitaminD": "Vitamina D",
+      "vitaminE": "Vitamina E",
+      "vitaminK": "Vitamina K",
+      "folate": "Folato",
+      "vitaminB12": "Vitamina B12",
+      "magnesium": "Magnésio",
+      "phosphorus": "Fósforo",
+      "potassium": "Potássio",
+      "zinc": "Zinco"
+    },
+    "en-US": {
+      "calories": "Calories",
+      "protein": "Protein",
+      "carbs": "Carbohydrates",
+      "fat": "Total Fat",
+      "saturatedFat": "Saturated Fat",
+      "transFat": "Trans Fat",
+      "fiber": "Dietary Fiber",
+      "sugar": "Sugars",
+      "sodium": "Sodium",
+      "cholesterol": "Cholesterol",
+      "vitaminC": "Vitamin C",
+      "calcium": "Calcium",
+      "iron": "Iron",
+      "vitaminA": "Vitamin A",
+      "vitaminD": "Vitamin D",
+      "vitaminE": "Vitamin E",
+      "vitaminK": "Vitamin K",
+      "folate": "Folate",
+      "vitaminB12": "Vitamin B12",
+      "magnesium": "Magnesium",
+      "phosphorus": "Phosphorus",
+      "potassium": "Potassium",
+      "zinc": "Zinc"
+    }
+  },
+  "units": {
+    "calories": "kcal",
+    "protein": "g",
+    "carbs": "g",
+    "fat": "g",
+    "saturatedFat": "g",
+    "transFat": "g",
+    "fiber": "g",
+    "sugar": "g",
+    "sodium": "mg",
+    "cholesterol": "mg",
+    "vitaminC": "mg",
+    "calcium": "mg",
+    "iron": "mg",
+    "vitaminA": "mcg",
+    "vitaminD": "mcg",
+    "vitaminE": "mg",
+    "vitaminK": "mcg",
+    "folate": "mcg",
+    "vitaminB12": "mcg",
+    "magnesium": "mg",
+    "phosphorus": "mg",
+    "potassium": "mg",
+    "zinc": "mg"
+  },
+  "categories": [
+    {
+      "id": "macronutrients",
+      "name": "Macronutrientes",
+      "fields": ["calories", "protein", "carbs", "fat", "fiber"]
+    },
+    {
+      "id": "vitamins",
+      "name": "Vitaminas",
+      "fields": ["vitaminA", "vitaminC", "vitaminD", "vitaminE", "vitaminK", "folate", "vitaminB12"]
+    },
+    {
+      "id": "minerals",
+      "name": "Minerais",
+      "fields": ["calcium", "iron", "magnesium", "phosphorus", "potassium", "zinc", "sodium"]
+    },
+    {
+      "id": "others",
+      "name": "Outros",
+      "fields": ["cholesterol", "saturatedFat", "transFat", "sugar"]
+    }
+  ],
+  "healthMetrics": [
+    {
+      "id": "low_calorie",
+      "name": "Baixa Caloria",
+      "description": "Menos de 100 calorias por porção",
+      "criteria": {
+        "calories": { "max": 100 }
+      }
+    },
+    {
+      "id": "high_protein",
+      "name": "Rica em Proteína",
+      "description": "Mais de 15g de proteína por porção",
+      "criteria": {
+        "protein": { "min": 15 }
+      }
+    },
+    {
+      "id": "high_fiber",
+      "name": "Rica em Fibras",
+      "description": "Mais de 5g de fibra por porção",
+      "criteria": {
+        "fiber": { "min": 5 }
+      }
+    },
+    {
+      "id": "low_sodium",
+      "name": "Baixo Sódio",
+      "description": "Menos de 200mg de sódio por porção",
+      "criteria": {
+        "sodium": { "max": 200 }
+      }
+    },
+    {
+      "id": "low_sugar",
+      "name": "Baixo Açúcar",
+      "description": "Menos de 5g de açúcar por porção",
+      "criteria": {
+        "sugar": { "max": 5 }
+      }
+    },
+    {
+      "id": "low_fat",
+      "name": "Baixa Gordura",
+      "description": "Menos de 5g de gordura por porção",
+      "criteria": {
+        "fat": { "max": 5 }
+      }
+    }
+  ],
+  "allergens": [
+    {
+      "id": "gluten",
+      "name": "Glúten",
+      "description": "Presente em trigo, centeio, cevada e aveia",
+      "commonSources": ["trigo", "centeio", "cevada", "aveia", "farinha de trigo"]
+    },
+    {
+      "id": "lactose",
+      "name": "Lactose",
+      "description": "Presente em produtos lácteos",
+      "commonSources": ["leite", "queijo", "manteiga", "iogurte", "creme de leite"]
+    },
+    {
+      "id": "nuts",
+      "name": "Oleaginosas",
+      "description": "Amendoim, castanhas, nozes, etc.",
+      "commonSources": ["amendoim", "castanha", "noz", "amêndoa", "avelã"]
+    },
+    {
+      "id": "eggs",
+      "name": "Ovos",
+      "description": "Ovos e produtos derivados",
+      "commonSources": ["ovo", "clara", "gema", "maionese", "massas com ovo"]
+    },
+    {
+      "id": "soy",
+      "name": "Soja",
+      "description": "Soja e produtos derivados",
+      "commonSources": ["soja", "tofu", "molho de soja", "proteína de soja"]
+    },
+    {
+      "id": "seafood",
+      "name": "Frutos do Mar",
+      "description": "Peixes e crustáceos",
+      "commonSources": ["peixe", "camarão", "lagosta", "caranguejo", "lula"]
+    }
+  ]
+}

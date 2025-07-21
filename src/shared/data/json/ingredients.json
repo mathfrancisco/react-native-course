@@ -1,0 +1,244 @@
+{
+  "version": "1.0",
+  "lastUpdated": "2024-01-20T10:00:00Z",
+  "totalIngredients": 150,
+  "categories": [
+    "vegetables",
+    "fruits",
+    "proteins",
+    "grains",
+    "dairy",
+    "spices",
+    "herbs",
+    "oils",
+    "condiments",
+    "baking"
+  ],
+  "ingredients": [
+    {
+      "id": "ing_001",
+      "name": "Tomate",
+      "category": "vegetables",
+      "commonUnits": ["unidade", "kg", "g"],
+      "defaultUnit": "unidade",
+      "synonyms": ["tomate comum", "tomate salada"],
+      "season": ["verão", "outono"],
+      "storageInfo": "Conservar em local fresco e arejado",
+      "nutritionalInfo": {
+        "calories": 18,
+        "protein": 0.9,
+        "carbs": 3.9,
+        "fat": 0.2,
+        "fiber": 1.2,
+        "vitaminC": 12.7
+      },
+      "allergens": [],
+      "substitutes": ["tomate cereja", "molho de tomate"]
+    },
+    {
+      "id": "ing_002",
+      "name": "Cebola",
+      "category": "vegetables",
+      "commonUnits": ["unidade", "kg", "g"],
+      "defaultUnit": "unidade",
+      "synonyms": ["cebola comum", "cebola branca"],
+      "season": ["ano todo"],
+      "storageInfo": "Local seco e arejado, longe da luz",
+      "nutritionalInfo": {
+        "calories": 40,
+        "protein": 1.1,
+        "carbs": 9.3,
+        "fat": 0.1,
+        "fiber": 1.7
+      },
+      "allergens": [],
+      "substitutes": ["cebola roxa", "cebolinha", "alho-poró"]
+    },
+    {
+      "id": "ing_003",
+      "name": "Alho",
+      "category": "vegetables",
+      "commonUnits": ["dente", "cabeça", "g"],
+      "defaultUnit": "dente",
+      "synonyms": ["dente de alho"],
+      "season": ["ano todo"],
+      "storageInfo": "Local seco e arejado",
+      "nutritionalInfo": {
+        "calories": 149,
+        "protein": 6.4,
+        "carbs": 33.1,
+        "fat": 0.5,
+        "fiber": 2.1
+      },
+      "allergens": [],
+      "substitutes": ["alho em pó", "alho granulado"]
+    },
+    {
+      "id": "ing_004",
+      "name": "Arroz",
+      "category": "grains",
+      "commonUnits": ["xícara", "kg", "g"],
+      "defaultUnit": "xícara",
+      "synonyms": ["arroz branco", "arroz agulhinha"],
+      "season": ["ano todo"],
+      "storageInfo": "Local seco em recipiente fechado",
+      "nutritionalInfo": {
+        "calories": 130,
+        "protein": 2.7,
+        "carbs": 28,
+        "fat": 0.3,
+        "fiber": 0.4
+      },
+      "allergens": [],
+      "substitutes": ["arroz integral", "quinoa", "arroz parboilizado"]
+    },
+    {
+      "id": "ing_005",
+      "name": "Feijão",
+      "category": "proteins",
+      "commonUnits": ["xícara", "kg", "g"],
+      "defaultUnit": "xícara",
+      "synonyms": ["feijão carioca", "feijão comum"],
+      "season": ["ano todo"],
+      "storageInfo": "Local seco em recipiente fechado",
+      "nutritionalInfo": {
+        "calories": 127,
+        "protein": 8.7,
+        "carbs": 22.8,
+        "fat": 0.5,
+        "fiber": 6.4,
+        "iron": 1.8
+      },
+      "allergens": [],
+      "substitutes": ["feijão preto", "lentilha", "grão de bico"]
+    },
+    {
+      "id": "ing_006",
+      "name": "Frango",
+      "category": "proteins",
+      "commonUnits": ["kg", "g", "unidade"],
+      "defaultUnit": "kg",
+      "synonyms": ["peito de frango", "frango inteiro"],
+      "season": ["ano todo"],
+      "storageInfo": "Refrigerar até 2 dias ou congelar",
+      "nutritionalInfo": {
+        "calories": 165,
+        "protein": 31,
+        "carbs": 0,
+        "fat": 3.6,
+        "cholesterol": 85
+      },
+      "allergens": [],
+      "substitutes": ["peru", "peixe", "tofu"]
+    },
+    {
+      "id": "ing_007",
+      "name": "Leite",
+      "category": "dairy",
+      "commonUnits": ["ml", "l", "xícara"],
+      "defaultUnit": "ml",
+      "synonyms": ["leite integral", "leite de vaca"],
+      "season": ["ano todo"],
+      "storageInfo": "Refrigerar e consumir até a data de validade",
+      "nutritionalInfo": {
+        "calories": 42,
+        "protein": 3.4,
+        "carbs": 5,
+        "fat": 1,
+        "calcium": 113
+      },
+      "allergens": ["lactose"],
+      "substitutes": ["leite de amêndoas", "leite de coco", "leite de soja"]
+    },
+    {
+      "id": "ing_008",
+      "name": "Açúcar",
+      "category": "baking",
+      "commonUnits": ["xícara", "colher de sopa", "g"],
+      "defaultUnit": "xícara",
+      "synonyms": ["açúcar cristal", "açúcar refinado"],
+      "season": ["ano todo"],
+      "storageInfo": "Local seco em recipiente fechado",
+      "nutritionalInfo": {
+        "calories": 387,
+        "protein": 0,
+        "carbs": 100,
+        "fat": 0
+      },
+      "allergens": [],
+      "substitutes": ["açúcar demerara", "mel", "açúcar de coco"]
+    },
+    {
+      "id": "ing_009",
+      "name": "Farinha de Trigo",
+      "category": "baking",
+      "commonUnits": ["xícara", "kg", "g"],
+      "defaultUnit": "xícara",
+      "synonyms": ["farinha comum", "farinha branca"],
+      "season": ["ano todo"],
+      "storageInfo": "Local seco em recipiente fechado",
+      "nutritionalInfo": {
+        "calories": 364,
+        "protein": 10.3,
+        "carbs": 76.3,
+        "fat": 0.9,
+        "fiber": 2.7
+      },
+      "allergens": ["glúten"],
+      "substitutes": ["farinha de arroz", "farinha de amêndoas", "farinha sem glúten"]
+    },
+    {
+      "id": "ing_010",
+      "name": "Azeite de Oliva",
+      "category": "oils",
+      "commonUnits": ["colher de sopa", "ml", "xícara"],
+      "defaultUnit": "colher de sopa",
+      "synonyms": ["azeite extra virgem"],
+      "season": ["ano todo"],
+      "storageInfo": "Local fresco e escuro",
+      "nutritionalInfo": {
+        "calories": 884,
+        "protein": 0,
+        "carbs": 0,
+        "fat": 100,
+        "vitaminE": 14.4
+      },
+      "allergens": [],
+      "substitutes": ["óleo de girassol", "óleo de canola", "manteiga"]
+    },
+    {
+      "id": "ing_011",
+      "name": "Sal",
+      "category": "condiments",
+      "commonUnits": ["colher de chá", "colher de sopa", "pitada"],
+      "defaultUnit": "colher de chá",
+      "synonyms": ["sal refinado", "sal de cozinha"],
+      "season": ["ano todo"],
+      "storageInfo": "Local seco",
+      "nutritionalInfo": {
+        "sodium": 38758
+      },
+      "allergens": [],
+      "substitutes": ["sal marinho", "sal rosa", "temperos sem sal"]
+    },
+    {
+      "id": "ing_012",
+      "name": "Pimenta-do-reino",
+      "category": "spices",
+      "commonUnits": ["colher de chá", "pitada", "g"],
+      "defaultUnit": "colher de chá",
+      "synonyms": ["pimenta preta", "pimenta moída"],
+      "season": ["ano todo"],
+      "storageInfo": "Local seco em recipiente fechado",
+      "nutritionalInfo": {
+        "calories": 251,
+        "protein": 10.4,
+        "carbs": 63.9,
+        "fat": 3.3,
+        "fiber": 25.3
+      },
+      "allergens": [],
+      "substitutes": ["pimenta branca", "páprica", "pimenta síria"]
+    }
+  ]
+}

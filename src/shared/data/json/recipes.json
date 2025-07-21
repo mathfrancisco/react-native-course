@@ -1,0 +1,265 @@
+{
+  "version": "1.0",
+  "lastUpdated": "2024-01-20T10:00:00Z",
+  "totalRecipes": 10,
+  "recipes": [
+    {
+      "id": "json_recipe_1",
+      "title": "Pão de Açúcar",
+      "description": "Pão doce tradicional brasileiro, macio e saboroso, perfeito para o café da manhã.",
+      "image": "https://picsum.photos/400/300?random=100",
+      "ingredients": [
+        {
+          "name": "Farinha de trigo",
+          "amount": 500,
+          "unit": "g"
+        },
+        {
+          "name": "Açúcar",
+          "amount": 100,
+          "unit": "g"
+        },
+        {
+          "name": "Fermento biológico",
+          "amount": 10,
+          "unit": "g"
+        },
+        {
+          "name": "Leite morno",
+          "amount": 250,
+          "unit": "ml"
+        },
+        {
+          "name": "Manteiga",
+          "amount": 50,
+          "unit": "g"
+        },
+        {
+          "name": "Ovos",
+          "amount": 2,
+          "unit": "unidade"
+        },
+        {
+          "name": "Sal",
+          "amount": 1,
+          "unit": "colher de chá"
+        }
+      ],
+      "instructions": [
+        {
+          "step": 1,
+          "description": "Dissolva o fermento no leite morno com 1 colher de açúcar."
+        },
+        {
+          "step": 2,
+          "description": "Em uma tigela, misture a farinha, açúcar restante e sal."
+        },
+        {
+          "step": 3,
+          "description": "Adicione os ovos, manteiga derretida e a mistura de fermento."
+        },
+        {
+          "step": 4,
+          "description": "Amasse até formar uma massa lisa e elástica."
+        },
+        {
+          "step": 5,
+          "description": "Deixe crescer por 1 hora em local morno."
+        },
+        {
+          "step": 6,
+          "description": "Modele os pães e deixe crescer por mais 30 minutos."
+        },
+        {
+          "step": 7,
+          "description": "Asse a 180°C por 25-30 minutos até dourar."
+        }
+      ],
+      "servings": 8,
+      "prepTime": 30,
+      "cookTime": 30,
+      "restTime": 90,
+      "difficulty": "medium",
+      "categoryId": "category_5",
+      "mealTypes": ["breakfast", "snack"],
+      "cuisine": "Brasileira",
+      "tags": ["pão", "doce", "café da manhã"],
+      "author": {
+        "id": "json_author_1",
+        "name": "Chef Maria"
+      },
+      "rating": 4.5,
+      "favorites": 234,
+      "views": 1520,
+      "createdAt": "2024-01-15T08:00:00Z"
+    },
+    {
+      "id": "json_recipe_2",
+      "title": "Moqueca de Peixe",
+      "description": "Tradicional moqueca baiana com peixe fresco, leite de coco e dendê.",
+      "image": "https://picsum.photos/400/300?random=101",
+      "ingredients": [
+        {
+          "name": "Peixe em postas",
+          "amount": 1,
+          "unit": "kg",
+          "notes": "robalo ou badejo"
+        },
+        {
+          "name": "Leite de coco",
+          "amount": 400,
+          "unit": "ml"
+        },
+        {
+          "name": "Azeite de dendê",
+          "amount": 3,
+          "unit": "colher de sopa"
+        },
+        {
+          "name": "Cebola",
+          "amount": 2,
+          "unit": "unidade",
+          "notes": "em fatias"
+        },
+        {
+          "name": "Tomate",
+          "amount": 3,
+          "unit": "unidade",
+          "notes": "em fatias"
+        },
+        {
+          "name": "Pimentão",
+          "amount": 2,
+          "unit": "unidade",
+          "notes": "em fatias"
+        },
+        {
+          "name": "Coentro",
+          "amount": 1,
+          "unit": "maço"
+        },
+        {
+          "name": "Limão",
+          "amount": 2,
+          "unit": "unidade"
+        }
+      ],
+      "instructions": [
+        {
+          "step": 1,
+          "description": "Tempere o peixe com sal e limão. Deixe marinar por 20 minutos."
+        },
+        {
+          "step": 2,
+          "description": "Em uma panela de barro, refogue a cebola no azeite de dendê."
+        },
+        {
+          "step": 3,
+          "description": "Adicione o tomate e pimentão. Cozinhe por 5 minutos."
+        },
+        {
+          "step": 4,
+          "description": "Coloque as postas de peixe e adicione o leite de coco."
+        },
+        {
+          "step": 5,
+          "description": "Cozinhe em fogo baixo por 15 minutos sem mexer muito."
+        },
+        {
+          "step": 6,
+          "description": "Finalize com coentro picado e sirva com arroz."
+        }
+      ],
+      "servings": 6,
+      "prepTime": 25,
+      "cookTime": 25,
+      "restTime": 20,
+      "difficulty": "medium",
+      "categoryId": "category_10",
+      "mealTypes": ["lunch", "dinner"],
+      "cuisine": "Baiana",
+      "tags": ["moqueca", "peixe", "baiano", "dendê"],
+      "author": {
+        "id": "json_author_2",
+        "name": "Chef Baiano"
+      },
+      "rating": 4.7,
+      "favorites": 567,
+      "views": 2834,
+      "createdAt": "2024-01-12T14:30:00Z"
+    },
+    {
+      "id": "json_recipe_3",
+      "title": "Tapioca Recheada",
+      "description": "Tapioca tradicional do nordeste com diversos recheios deliciosos.",
+      "image": "https://picsum.photos/400/300?random=102",
+      "ingredients": [
+        {
+          "name": "Goma de tapioca",
+          "amount": 200,
+          "unit": "g"
+        },
+        {
+          "name": "Queijo coalho",
+          "amount": 150,
+          "unit": "g",
+          "notes": "ralado"
+        },
+        {
+          "name": "Presunto",
+          "amount": 100,
+          "unit": "g",
+          "notes": "em cubos"
+        },
+        {
+          "name": "Coco ralado",
+          "amount": 50,
+          "unit": "g"
+        },
+        {
+          "name": "Leite condensado",
+          "amount": 2,
+          "unit": "colher de sopa"
+        }
+      ],
+      "instructions": [
+        {
+          "step": 1,
+          "description": "Aqueça uma frigideira antiaderente em fogo médio."
+        },
+        {
+          "step": 2,
+          "description": "Polvilhe a goma de tapioca formando um círculo."
+        },
+        {
+          "step": 3,
+          "description": "Aguarde a goma formar uma massa uniforme."
+        },
+        {
+          "step": 4,
+          "description": "Adicione o recheio de sua preferência em metade da tapioca."
+        },
+        {
+          "step": 5,
+          "description": "Dobre ao meio e sirva quente."
+        }
+      ],
+      "servings": 2,
+      "prepTime": 5,
+      "cookTime": 5,
+      "difficulty": "easy",
+      "categoryId": "category_5",
+      "mealTypes": ["breakfast", "snack"],
+      "cuisine": "Nordestina",
+      "tags": ["tapioca", "nordeste", "rápido", "sem glúten"],
+      "author": {
+        "id": "json_author_3",
+        "name": "Dona Francisca"
+      },
+      "rating": 4.4,
+      "favorites": 123,
+      "views": 856,
+      "createdAt": "2024-01-18T07:15:00Z"
+    }
+  ]
+}
