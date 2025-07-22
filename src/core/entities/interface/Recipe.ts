@@ -19,8 +19,8 @@ export interface Recipe {
   reviewCount: number;
   imageUrl?: string;
   author?: string;
-  createdAt: string;
-  updatedAt: string;
+  createdAt: Date | string;
+  updatedAt: Date | string;
 }
 
 export type DifficultyLevel = 'easy' | 'medium' | 'hard';

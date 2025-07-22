@@ -1,4 +1,4 @@
-import { Recipe as CoreRecipe } from '../../../core/entities';
+import { Recipe as CoreRecipe } from '../../../core/entities/interface/Recipe';
 import { Recipe as SharedRecipe } from '../../../shared/types/recipe.types';
 
 
@@ -18,8 +18,8 @@ export class RecipeDataAdapter {
       difficulty: this.adaptDifficulty(sharedRecipe.difficulty),
       
       // Tempos (estrutura diferente)
-      prepTime: sharedRecipe.timing?.prepTime || sharedRecipe.prepTime || 0,
-      cookTime: sharedRecipe.timing?.cookTime || sharedRecipe.cookTime || 0,
+      prepTime: sharedRecipe.timing?.prepTime || 0,
+      cookTime: sharedRecipe.timing?.cookTime || 0,
       
       servings: sharedRecipe.servings,
       
@@ -36,11 +36,11 @@ export class RecipeDataAdapter {
       tags: sharedRecipe.tags?.map(tag => typeof tag === 'string' ? tag : tag.name) || [],
       
       // Avaliação e reviews
-      rating: sharedRecipe.stats?.averageRating || sharedRecipe.rating || 0,
+      rating: sharedRecipe.stats?.averageRating || sharedRecipe.ratings || 0,
       reviewCount: sharedRecipe.stats?.totalRatings || sharedRecipe.reviewCount || 0,
-      
+
       // Metadados
-      imageUrl: sharedRecipe.imageUrl || sharedRecipe.images?.[0],
+      imageUrl: sharedRecipe.imageUrl || sharedRecipe.images?.[0]?.url,
       author: sharedRecipe.author?.name || sharedRecipe.authorName,
       createdAt: sharedRecipe.createdAt,
       updatedAt: sharedRecipe.updatedAt

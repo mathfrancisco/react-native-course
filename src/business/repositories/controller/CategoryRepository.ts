@@ -1,4 +1,3 @@
-
 import { IBaseRepository, RepositoryConfig } from '../interface/IBaseRepository';
 import { DataLoader } from '../../../shared/data/typescript/DataLoader';
 import { validateCategory } from '../../../shared/data/typescript/DataValidator';

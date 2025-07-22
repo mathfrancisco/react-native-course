@@ -1,6 +1,9 @@
-import { Category as CoreCategory } from '../../../core/entities';
+import { Category as CoreCategory } from '../../../core/entities/interface/Category';
 import { Category as SharedCategory } from '../../../shared/types/category.types';
 
+function ensureDate(dateValue: string | Date): Date {
+  return typeof dateValue === 'string' ? new Date(dateValue) : dateValue;
+}
 export class CategoryDataAdapter {
   /**
    * 🔄 Converte categoria Shared → Core
@@ -33,7 +36,7 @@ export class CategoryDataAdapter {
       imageUrl: coreCategory.imageUrl,
       iconName: 'restaurant', // Padrão
       color: coreCategory.color,
-      parentId: null, // Será preenchido se necessário
+      parentId: undefined, // Será preenchido se necessário
       level: 0,
       isActive: coreCategory.isActive,
       isVisible: coreCategory.isActive,
@@ -44,8 +47,8 @@ export class CategoryDataAdapter {
       keywords: [coreCategory.name.toLowerCase()],
       mealTypes: [],
       dietaryTypes: [],
-      createdAt: coreCategory.createdAt,
-      updatedAt: coreCategory.updatedAt
+      createdAt: ensureDate(coreCategory.createdAt),
+      updatedAt: ensureDate(coreCategory.updatedAt)
     };
   }
   
@@ -64,4 +67,7 @@ export class CategoryDataAdapter {
       })
       .filter((category): category is CoreCategory => category !== null);
   }
+
+  
+
 }

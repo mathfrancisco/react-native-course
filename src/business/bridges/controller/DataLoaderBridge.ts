@@ -1,5 +1,6 @@
 import { dataLoader } from '../../../shared/data/typescript/DataLoader';
-import { Recipe as CoreRecipe, Category as CoreCategory } from '../../../core/entities';
+import { Recipe as CoreRecipe } from '../../../core/entities/interface/Recipe';
+import {Category as CoreCategory } from '../../../core/entities/interface/Category'
 import { RecipeDataAdapter } from '../../adapters/controller/RecipeDataAdapter';
 import { CategoryDataAdapter } from '../../adapters/controller/CategoryDataAdapter';
 import { RecipeHelpers } from '../../../shared/data/helpers/recipeHelpers';

@@ -1,8 +1,9 @@
-import { RepositoryManager } from '../../core/repositories';
+
 import { RecipeRepository } from '../repositories/controller/RecipeRepository';
 import { CategoryRepository } from '../repositories/controller/CategoryRepository';
 import { FavoriteRepository } from '../repositories/controller/FavoriteRepository';
 import { RepositoryConfig } from '../repositories/interface/IBaseRepository';
+import { RepositoryManager } from '../../core/repositories/controller/RepositoryManager';
 
 export class RepositoryFactory {
   private static instance: RepositoryFactory;

@@ -1,14 +1,12 @@
-import { 
-  IRecipeRepository, 
-  Recipe, 
-  RecipeFilter, 
-  PaginatedResult 
-} from '../../../core/repositories';
-import { IBaseRepository, RepositoryConfig } from '../interface/IBaseRepository';
-import { CacheController } from '../../../core/repositories';
+import { FilterController } from '../../../core/entities/controller/FilterController';
+import { PaginatedResult } from '../../../core/entities/interface/Common';
+import { RecipeFilter } from '../../../core/entities/interface/Filter';
+import { Recipe } from '../../../core/entities/interface/Recipe';
+import { CacheController } from '../../../core/repositories/controller/CacheController';
+import { IRecipeRepository } from '../../../core/repositories/interface/IRecipeRepository';
 import { DataLoaderBridge } from '../../bridges/controller/DataLoaderBridge';
 import { ValidationBridge } from '../../bridges/controller/ValidationBridge';
-import { FilterController } from '../../../core/entities';
+import { IBaseRepository, RepositoryConfig } from '../interface/IBaseRepository';
 
 export class IntegratedRecipeRepository implements IRecipeRepository, IBaseRepository<Recipe> {
   private cache = new CacheController();

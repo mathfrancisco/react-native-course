@@ -8,6 +8,6 @@ export interface Category {
   sortOrder: number;
   recipeCount: number;
   isActive: boolean;
-  createdAt: string;
-  updatedAt: string;
+  createdAt: Date | string;
+  updatedAt: Date | string;
 }
