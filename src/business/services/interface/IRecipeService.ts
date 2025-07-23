@@ -1,9 +1,6 @@
-import { 
-  Recipe, 
-  RecipeFilter, 
-  PaginatedResult, 
-  SearchCriteria 
-} from '../../../core/entities';
+import { PaginatedResult } from "../../../core/entities/interface/Common";
+import { RecipeFilter, SearchCriteria } from "../../../core/entities/interface/Filter";
+import { Recipe } from "../../../core/entities/interface/Recipe";
 
 export interface IRecipeService {
   // Operações principais

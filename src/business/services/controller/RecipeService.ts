@@ -1,16 +1,11 @@
 import { IRecipeService, RecipeWithFavoriteStatus, RecipeStats } from '../interface/IRecipeService';
-import { 
-  Recipe, 
-  RecipeFilter, 
-  PaginatedResult, 
-  SearchCriteria 
-} from '../../../core/entities';
-import { 
-  GetRecipesUseCase, 
-  SearchRecipesUseCase, 
-  ToggleFavoriteUseCase 
-} from '../../../core/usecases';
-import { RepositoryManager } from '../../../core/repositories';
+import { Recipe } from '../../../core/entities/interface/Recipe';
+import { RecipeFilter, SearchCriteria } from '../../../core/entities/interface/Filter';
+import { PaginatedResult } from '../../../core/entities/interface/Common';
+import { GetRecipesUseCase } from '../../../core/usecases/controller/GetRecipesUseCase';
+import { ToggleFavoriteUseCase } from '../../../core/usecases/controller/ToggleFavoriteUseCase';
+import { SearchRecipesUseCase } from '../../../core/usecases/controller/SearchRecipesUseCase';
+import { RepositoryManager } from '../../../core/repositories/controller/RepositoryManager';
 
 export class RecipeService implements IRecipeService {
   private getRecipesUseCase: GetRecipesUseCase;
